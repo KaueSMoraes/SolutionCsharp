@@ -25,7 +25,6 @@ public class Order
     }
 
     //Métodos padrões de Adição e Remoção de Itens
-
     public void AddItem(OrderItem item)
     {
         OrderItens.Add(item);
