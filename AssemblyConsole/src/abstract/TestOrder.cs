@@ -4,7 +4,7 @@ using AssemblyConsole.Entities.Enums;
 
 namespace AssemblyConsole.src;
 
-public class TestOrder
+abstract class TestOrder
 {
     public static void Master()
     {
