@@ -17,6 +17,10 @@ public class Program()
             case "TestOrder":
                 TestOrder.Master();
             break;
+
+            case "TestProducts":
+                TestProducts.Master();
+            break;    
         }
         Console.WriteLine("Pressione Enter para finalizar o programa...");
         Console.ReadLine();
