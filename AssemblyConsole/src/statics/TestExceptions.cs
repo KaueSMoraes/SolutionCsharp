@@ -21,7 +21,7 @@ public static class TestExceptions
             Account acc = new Account(numberAccount, holder,iniBalance, withdrawlimit );
 
             System.Console.Write("Enter amount for Withdraw: ");
-            var amount = double.Parse(Console.ReadLine());
+            double amount = double.Parse(Console.ReadLine());
             acc.withdraw(amount);
             System.Console.WriteLine(acc);
 
