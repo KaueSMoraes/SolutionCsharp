@@ -20,6 +20,10 @@ public class Program()
 
             case "TestProducts":
                 TestProducts.Master();
+            break;
+
+            case "TestExceptions":
+                TestExceptions.Master();
             break;    
         }
         Console.WriteLine("Pressione Enter para finalizar o programa...");
