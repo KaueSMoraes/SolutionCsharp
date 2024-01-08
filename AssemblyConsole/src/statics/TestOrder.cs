@@ -40,7 +40,7 @@ abstract class TestOrder
             Product product = new(nameproduct, priceproduct);
             OrderItem item = new(quantity, priceproduct, product);
 
-            //Adiciono na lista, o Obejeto Item
+            //Adiciono na lista, o Objeto Item
             order.AddItem(item);
         }
 
