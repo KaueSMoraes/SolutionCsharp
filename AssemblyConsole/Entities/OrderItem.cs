@@ -8,7 +8,7 @@ public class OrderItem
     public Product OrderProduct {get; private set;}
 
     //Construtor padrão sem Sobrecarga
-    public OrderItem(int quantity, double price,Product product)
+    public OrderItem(int quantity, double price, Product product)
     {
         Quantity = quantity;
         Price = price;

@@ -5,7 +5,7 @@ namespace AssemblyConsole.src;
 
 public static class TestExceptions
 {
-    public static void Master()
+    public static void Master() 
     {
         try{    
             System.Console.WriteLine("Enter account data: ");
