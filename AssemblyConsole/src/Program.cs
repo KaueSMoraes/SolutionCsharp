@@ -25,6 +25,10 @@ public class Program()
             case "TestExceptions":
                 TestExceptions.Master();
             break;    
+
+            case "TestFiles":
+                TestFiles.Master();
+            break;      
         }
         Console.WriteLine("Pressione Enter para finalizar o programa...");
         Console.ReadLine();

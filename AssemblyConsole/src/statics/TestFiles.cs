@@ -31,7 +31,12 @@ public class TestFiles
             }
         }catch (IOException e)
         {
-            System.Console.WriteLine("Ocorreu um erro de Exceção durante a manipulação de arquivos");
+            Console.WriteLine("Ocorreu um erro de Exceção durante a manipulação de arquivos");
+            Console.WriteLine(e.Message);
+
+        }catch(Exception e)
+        {
+            Console.WriteLine("Ocorreu um erro de Exceção da Aplicação:");
             System.Console.WriteLine(e.Message);
         }
     }
