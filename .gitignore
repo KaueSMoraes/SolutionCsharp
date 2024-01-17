@@ -2,8 +2,6 @@
 /Lab
 *.log
 AP_*
-*.sln
-*.csproj
 *.csproj.nuget.dgspec.json
 *.csproj.nuget.g.props
 *.csproj.nuget.g.targets
@@ -16,7 +14,6 @@ AP_*
 *.editorconfig
 *.cache
 *.GlobalUsings.g.cs
-*.json
 *.dll
 *.pdb
 *.exe
