@@ -1,9 +1,10 @@
 using System.Globalization;
 using AssemblyConsole.Entities.Exceptions;
+using AssemblyConsole.Entities.Interfaces;
 
 namespace AssemblyConsole.Entities;
 
-public class Account
+public abstract class Account 
 {
     public int Number { get; private set; }
     public string Holder { get; set; }
@@ -18,23 +19,17 @@ public class Account
         Balance = balance;
         WithdrawLimit = withdrawlimit;
     }
-
-    public void Deposit(double amount)
-    {
-        Balance += amount;
-    }
-
     //Utilizo lançamento de exceções para dar mais legibilidade no código e controle de possíveis +
     //Exceções na aplicação(método main())
     public void withdraw(double amount)
     {
         if (amount > Balance){
 
-           throw new AppException1("SALDO INSUFICIENTE PARA SAQUE");
+           throw new AppException1("SALDO INSUFICIENTE PARA SAQUE EM CONTA CORRENTE");
 
         }else if (amount > WithdrawLimit){
 
-           throw new AppException1("LIMITE DE SAQUE DIÁRIO EXCEDIDO");
+           throw new AppException1("LIMITE DE SAQUE DIÁRIO EXCEDIDO EM CONTA");
 
         }else{
             Balance -= amount;

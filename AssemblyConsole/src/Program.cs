@@ -1,4 +1,5 @@
-﻿using AssemblyConsole.src;
+﻿using AssemblyConsole.src.statics;   
+using AssemblyConsole.src;
 using Microsoft.VisualBasic;
 
 namespace AssemblyConsole;
@@ -25,6 +26,14 @@ public class Program()
             case "TestExceptions":
                 TestExceptions.Master();
             break;    
+
+            case "TesteAccountList":
+                TestAccountsList.Master();
+            break;
+
+            case "TestContato":
+                TestContato.Master();
+            break;     
         }
         Console.WriteLine("Pressione Enter para finalizar o programa...");
         Console.ReadLine();
