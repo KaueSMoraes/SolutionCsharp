@@ -22,6 +22,10 @@ AP_*
 *.exe
 *.txt
 *.AssemblyAttributes.cs
-
+*CopyComplete
+*vsidx
+*v2
+*suo
+*.bin
 
 .fake

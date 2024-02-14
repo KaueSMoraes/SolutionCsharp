@@ -34,6 +34,14 @@ public class Program()
             case "TestContato":
                 TestContato.Master();
             break;     
+
+            case "TestDataAccess":
+                TestDataAccess.Master();
+            break;    
+
+            case "TesteDapper":
+                TesteDapper.Master();
+            break;    
         }
         Console.WriteLine("Pressione Enter para finalizar o programa...");
         Console.ReadLine();
